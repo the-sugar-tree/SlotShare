@@ -1,0 +1,17 @@
+name: SlotShare
+version: '1.0'
+main: com.sugar_tree.sharedslot.SharedSlot
+api-version: 1.17
+authors: [ sugar_tree ]
+website: https://github.com/the-sugar-tree/SlotShare
+commands:
+  shareslot:
+    aliases:
+      - ss
+    description: turn on/off FixedSlot
+    usage: /slotfix
+    permission: slotfix
+permissions:
+  shareslot:
+    default: op
+    description: Allows use /shareslot
