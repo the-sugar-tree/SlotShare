@@ -68,7 +68,7 @@ public final class SlotShare extends JavaPlugin implements Listener, TabExecutor
 
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
-        if (command.getName().equalsIgnoreCase("slotshare") || command.getName().equalsIgnoreCase("ss")) {
+        if (command.getName().equalsIgnoreCase("slotshare")) {
             if (sender.hasPermission("slotshare")) {
                 SlotShare = !SlotShare;
                 sender.sendMessage(PREFIX + ChatColor.YELLOW + "슬롯 공유: " + ChatColor.GREEN + SlotShare);
@@ -85,7 +85,7 @@ public final class SlotShare extends JavaPlugin implements Listener, TabExecutor
 
     @Override
     public @Nullable List<String> onTabComplete(@NotNull CommandSender sender, @NotNull Command command, @NotNull String alias, @NotNull String[] args) {
-        if (command.getName().equalsIgnoreCase("slotshare") || command.getName().equalsIgnoreCase("ss")) {
+        if (command.getName().equalsIgnoreCase("slotshare")) {
             if (sender.hasPermission("slotshare")) {
                 return new ArrayList<>();
             }

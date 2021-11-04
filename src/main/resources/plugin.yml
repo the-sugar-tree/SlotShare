@@ -5,13 +5,13 @@ api-version: 1.17
 authors: [ sugar_tree ]
 website: https://github.com/the-sugar-tree/SlotShare
 commands:
-  shareslot:
+  slotshare:
     aliases:
       - ss
-    description: turn on/off FixedSlot
-    usage: /slotfix
-    permission: slotfix
+    description: turn on/off Slot Sharing
+    usage: /slotshare
+    permission: slotshare
 permissions:
-  shareslot:
+  slotshare:
     default: op
-    description: Allows use /shareslot
+    description: Allows use /slotshare
