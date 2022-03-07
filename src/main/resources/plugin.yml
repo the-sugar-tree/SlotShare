@@ -1,6 +1,6 @@
 name: SlotShare
 version: '1.0'
-main: com.sugar_tree.sharedslot.SharedSlot
+main: com.sugar_tree.slotshare.SlotShare
 api-version: 1.18
 authors: [ sugar_tree ]
 website: https://github.com/the-sugar-tree/SlotShare

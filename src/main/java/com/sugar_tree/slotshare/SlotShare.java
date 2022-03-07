@@ -34,7 +34,7 @@ public final class SlotShare extends JavaPlugin implements Listener, TabExecutor
         getCommand("slotshare").setExecutor(this);
         getCommand("slotshare").setTabCompleter(this);
         getServer().getPluginManager().registerEvents(this, this);
-        getServer().getConsoleSender().sendMessage(PREFIX + ChatColor.YELLOW + "Enabled 슬롯 공유 플러그인 by. " + ChatColor.GREEN + "sugar_tree");
+        getServer().getConsoleSender().sendMessage(PREFIX + ChatColor.YELLOW + "\"슬롯 공유 플러그인\" by. " + ChatColor.GREEN + "sugar_tree");
     }
 
     @Override
@@ -52,7 +52,7 @@ public final class SlotShare extends JavaPlugin implements Listener, TabExecutor
 
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event) {
-        event.getPlayer().sendMessage(Component.text(PREFIX + ChatColor.YELLOW + "This server is using 슬롯 공유 플러그인 by." + ChatColor.GREEN + "sugar_tree"));
+        event.getPlayer().sendMessage(Component.text(PREFIX + ChatColor.YELLOW + "This server is using \"슬롯 공유 플러그인\" by." + ChatColor.GREEN + "sugar_tree"));
         if (SlotShare) patch(event.getPlayer());
     }
 
